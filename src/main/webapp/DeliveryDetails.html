@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delivery Details</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+</head>
+<body id="bodyForShipment">
+  <div id="receiverDetailsBox">
+    <div id="headerForReceiverBox">RECEIVER DETAILS</div>
+    <div id="bodyForReceiverBox">
+      <input class="commonforInputBoxReceiver" placeholder="Enter the name" id = "receiverName"></input>
+      <input class="commonforInputBoxReceiver" placeholder="Enter the EmailID" id = "receiverEmailID"></input>
+      <input class="commonforInputBoxReceiver" placeholder="Enter the Mobile number" id = "receiverMobileNumber"></input>
+      <input class="commonforInputBoxReceiver" placeholder="Enter the Address" id = "receiverAddress"></input>
+      <button id="continueToPackage" onclick = "receiverDetails()">Continue</button>
+    </div>
+  </div>
+
+
+  <div id="PackageDetails">
+    <div id="headerForPackageBox">PACKAGE DETAILS</div>
+    <div id="bodyForPackageBox">
+      <input class="commonforInputBoxReceiver" placeholder="Enter the Item name" id = "itemName"></input>
+      <input class="commonforInputBoxReceiver" placeholder="Enter the Weight" id = "weight"></input>
+      <input class="commonforInputBoxReceiver" placeholder="Enter the Description" id = "description"></input>
+      <div id="selectbox1" class="commonforselectBox">
+        <label for="pet-select" id="selectforTypeofDelivery" class="commonforLabel">Choose the type of Delivery:</label>
+
+        <select name="delivery" id="typeOfDelivery" class="commonforSelectOption">
+          <option value="">--Please choose an option--</option>
+          <option value="normalDelivery">NORMALDELIVERY</option>
+          <option value="speedDelivery">SPEEDDELIVERY</option>
+        </select>
+      </div>
+      <div id="selectbox2" class="commonforselectBox">
+        <label for="pet-select" id="selectforTypeofPayment" class="commonforLabel">Choose the type of Payment:</label>
+
+        <select name="delivery" id="paymentType" class="commonforSelectOption">
+          <option value="">--Please choose an option--</option>
+          <option value="CASHONDELIVERY">CASHONDELIVERY</option>
+          <option value="ONLINE">ONLINE</option>
+        </select>
+      </div>
+      <button id="continueToPaymentPage" onclick="packageDetails()">Continue</button>
+    </div>
+  </div>
+
+
+ <div id="paymentDetails">
+    <div id="headerForPaymentBox">PAYMENT</div>
+    
+    <div id="bodyForPaymentBox">
+      <p id="paymentText">Scan QR code to pay</p>
+      <p id="showAmout" class="commontextForMoney">Pay: <span id="money" class="commontextForMoney"></span> RS</p>
+      <div id="QRimage"></div>
+      <button id="continueToDonePage" onclick="toSuccessful()">Continue</button>
+  </div>
+</div>
+  <div id="successfulPayment">
+      <div id="centerBoxForSuccessful">
+      <div id="tickLogo"></div>
+      <p id="textForSuccessful" class="commontextForSuccessful">Your order has been successfully placed</p>
+      <p id="textforTrackID" class="commontextForSuccessful">Your Track ID: <span id="trackingCode" class="commontextForSuccessful"></span></p>
+      <p id="dontForget" class="commontextForSuccessful">Please dont't forget it</p> 
+      <button id="goToMainPage" onclick = "mainpage()">Done</button>
+      </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

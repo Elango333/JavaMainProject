@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>login</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header id="headerPart">
+  <div id="logoPart" class = "btn-4">
+    <img src="images/Screenshot_from_2024-02-08_18-04-58-removebg-preview.png" id="logoImage">
+  </div>
+  <div id="rightPart">
+  
+    <a href="/MainProject_Courier/DeliveryBoyLogin.html" id="featurePartner" class="commonFeature">
+      <p id="partnerName" class="commmonFontforFeature">PARTNER</p>
+    </a>
+    <div id="featureCompany" class="commonFeature">
+      <p id="companyName" class="commmonFontforFeature">COMPANY</p>
+    </div>
+    <a id="featureTrack" class="commonFeature">
+      <p id="trackName" class="commmonFontforFeature">TRACK</p>
+    </a>
+    <a id="featureShipNow" class="commonFeature">
+      <p id="shipnowName" class="commmonFontforFeature">SHIPNOW</p>
+    </a>
+    <a href="/MainProject_Courier/register.html" id="featureRegister" class="commonFeature">
+      <p id="registerName" class="commmonFontforFeature">REGISTER</p>
+    </a>
+    <div id="featureLogin" class="commonFeature" onclick="showProfile()">
+
+      <div id="iconUser">
+        <i class="fa-solid fa-user" id = "profileIcon" style="color: #B197FC;"></i>
+      </div>
+      <div id="userNametoShow">
+        <p id="userNametoShowText" class="commmonFontforFeature"> </p>
+      </div>
+    
+      
+    </div>
+  </div>
+</header>
+
+<header id="headerPartForDeliveryBoy">
+  <div id="logoPart">
+    <img src="images/Screenshot_from_2024-02-08_18-04-58-removebg-preview.png" id="logoImage">
+  </div>
+  <div id="rightPartforDeliveryBoy">
+    <a href="/MainProject_Courier/Orderlist.html" id="orderList" class="commonFeature">
+      <p id="companyName" class="commmonFontforFeature">ORDERLIST</p>
+    </a>
+    <div id="deliveryBoyProfile" class="commonFeature" onclick="showProfileForDeliveryBoy()">
+      <div id="iconUser">
+        <i class="fa-solid fa-user" style="color: #B197FC;"></i>
+      </div>
+      <div id="userNametoShow">
+        <p id="userNametoShowText" class="commmonFontforFeature">Elango</p>
+      </div>
+    </div>
+  </header>
+
+<section id="firstSection">
+
+  <div id="profilePage">
+    <div class="commonSizeforProfileBox" id="closeButtonBox">
+     <p id="profileName"> PROFILE</p>
+      <i class="fa-solid fa-xmark" id="closeIcon" onclick="closeProfile()"></i>
+    </div>
+    <div class="commonSizeforProfileBox commonSpaceBetween" id="profileContentBox1">
+      <p class="boxType" >Name</p>
+      <p class="boxValue" id="profileNameForBox"></p>
+    </div>    
+    <div class="commonSizeforProfileBox commonSpaceBetween" id="profileContentBox2">
+      <p class="boxType" >Customer ID</p>
+      <p class="boxValue" id="profileID"></p>
+    </div>
+    <div class="commonSizeforProfileBox commonSpaceBetween" id="profileContentBox3">
+      <p class="boxType" >Mobile Number</p>
+      <p class="boxValue" id="profileNumber"></p>
+    </div>
+    <div class="commonSizeforProfileBox commonSpaceBetween" id="profileContentBox4">
+      <p class="boxType" >Email ID</p>
+      <p class="boxValue" id="profileEmailID"></p>
+    </div>
+    <div class="commonSizeforProfileBox commonSpaceBetween" id="profileContentBox5">
+      <p class="boxType" >Address</p>
+      <p class="boxValue" id="profileAddress"></p>
+    </div>
+    <div class="commonSizeforProfileBox commonSpaceBetween" id="profileContentBox6">
+      <p class="boxType" >Number of order's placed</p>
+      <p class="boxValue" id="profileOrderCount"></p>
+    </div>
+    <div class="commonSizeforProfileBox" id="profileContentBox7">
+      <a href="/MainProject_Courier/mainPage.html" id="logoutButtonBox" onclick="logoutOption()">Logout</a>
+    </div>
+  </div>
+  <div id="bgImage">
+    <div class="overlay2"></div>
+    <p id="quote">From doorstep to destination,<br> your parcels,<br> our passion.</p>
+  </div>
+</section>
+<section id="secondSection">
+<p id="aboutCompanyText">Embark on a seamless courier journey with XSpeed. From local deliveries to global connections, trust us to deliver your parcels with care and efficiency.</p>
+</section>
+<section id = "thirdSection">
+  <p id="companyFeatureHeadingText">Our Unique Value Proposition</p>
+  <div id="featureImages"></div>
+</section>
+<section id="fourthSection">
+  <p id="missionHeaderText">MISSION</p>
+  <p id="missionBodyText">
+    At our core, we aim to exceed expectations in every delivery. From the moment your package is in our hands, we embark on a journey to ensure it reaches its destination with speed,<br> security, and satisfaction. Our mission is centered on your satisfaction. Embracing innovation, we are dedicated to staying at the forefront of the industry, adopting cutting-edge<br> technologies and sustainable practices that contribute to a greener and more efficient future. As we embark on this mission, we are committed to building a community of trust,<br> where our customers can rely on us as partners in their journeys. Our goal is to make every interaction with us a positive and memorable experience, reinforcing our commitment<br> to being more than just a courier service but a dependable ally in your logistical needs.
+  </p>
+</section>
+<footer id="footerPart">
+  <div id="footerMainBox">
+    <div id="footerSubBox1">
+      <div id = "footerSubBox1_1" class="commonSizeforFooterHeader">
+        
+      </div>
+      <div id = "footerSubBox1_2" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Email: xspeedcustomersupport@gmail.com</p>
+      </div>
+      <div id = "footerSubBox1_3" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Mobile: +91 - 8667 513 353</p>
+      </div>
+      <div id = "footerSubBox1_4" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">ISO 27001: 2024 Certified Company</p>
+      </div>
+    </div>
+    <div id="footerSubBox2">
+      <div id = "footerSubBox2_1" class="commonSizeforFooterHeader">
+        <p class="commonTextFooterHeader">COMPANY</p>
+      </div>
+      <div id = "footerSubBox2_2" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">About Us</p>
+      </div>
+      <div id = "footerSubBox2_3" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Terms & Conditions</p>
+      </div>
+      <div id = "footerSubBox2_4" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Career</p>
+      </div>
+    </div>
+    <div id="footerSubBox3">
+      <div id = "footerSubBox3_1" class="commonSizeforFooterHeader">
+        <p class="commonTextFooterHeader">SHIP WITH US</p>
+      </div>
+      <div id = "footerSubBox3_2" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Book a Shipment</p>
+      </div>
+      <div id = "footerSubBox3_3" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Track a Shipment</p>
+      </div>
+      <div id = "footerSubBox3_4" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Business Inquiry</p>
+      </div>
+    </div>
+    <div id="footerSubBox4">
+      <div id = "footerSubBox4_1" class="commonSizeforFooterHeader">
+        <p class="commonTextFooterHeader">HELP & SUPPORT</p>
+      </div>
+      <div id = "footerSubBox4_2" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Email Us</p>
+      </div>
+      <div id = "footerSubBox4_3" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Locate Us</p>
+      </div>
+      <div id = "footerSubBox4_4" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Customer Care</p>
+      </div>
+    </div>
+    <div id="footerSubBox5">
+      <div id = "footerSubBox5_1" class="commonSizeforFooterHeader">
+        <p class="commonTextFooterHeader">SELF SERVICE PORTALS</p>
+      </div>
+      <div id = "footerSubBox5_2" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Customer Login</p>
+      </div>
+      <div id = "footerSubBox5_3" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Delivery Partner Login</p>
+      </div>
+      <div id = "footerSubBox5_4" class="commonSizeforFooter">
+        <p class="commonTextForFooterBody">Manager Login</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/2f9977c4b2.js" crossorigin="anonymous"></script>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tracking</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body id="bodyForTrack">
+<div id="boxForTrackID">
+  <div id="trackHeading">XSPEED TRACK & TRACE</div>
+  <div id="askTrackID">
+    <input id="inputBoxForTrackID" placeholder="Enter the TrackID">
+  </div>
+  <div id="continueOption">
+    <button id="continuetoTrackingDetails" onclick="hideTrackBox()">Continue</button>
+  </div>  
+</div>
+<div id="boxforTrackDetails">
+  <div id="headingForTrackDetails">Courier Details</div>
+  <div id="areaForReceiverDetails">
+    <p class="commonBoxforSubHeading">Receiver details:</p>
+    <pre class="commontextFortrackingDetails">Name                      : <span id="receiverNameforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">EmailId                   : <span id="receiverEmailIDforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Mobile number    : <span id="receiverMobilenumberforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Address                  : <span id="receiverAddressforTracking"></span></pre>
+  </div>
+  <div id="areaForPackageDetails">
+    <p class="commonBoxforSubHeading">Package details:</p>
+    <pre class="commontextFortrackingDetails">Tracking code       : <span id="packageTrackingcodeforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Item name             : <span id="packageItemnameforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Weight                    : <span id="packageWeightforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Amount                  : <span id="packageAmountforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Description            : <span id="packageDescriptionforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Type of delivery   : <span id="packageTypeofDeliveryforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Type of payment : <span id="packageTypeofPaymentforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Delivery status     : <span id="packageDeliveryStatusforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Ordered date        : <span id="packageOrdereddateforTracking"></span></pre>
+    <pre class="commontextFortrackingDetails">Delivery date        : <span id="packageDeliverydateforTracking"></span></pre>
+  </div>
+  <div id="continueButtontoMainPage">
+    <button id="continuetoMainpageFromTracking" onclick ="goMainpage()">Go to Main page</button>
+  </div>
+</div>
+</div>
+  </body>
+  <script src="script.js"></script>
+  </html>
